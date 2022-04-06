@@ -1,8 +1,9 @@
 class Pub:
-    def __init__(self, input_name, input_till):
+    def __init__(self, input_name, input_till, input_stock):
         self.name = input_name
         self.till = input_till
-        self.drinks = ["Jack Daniels", "Baileys", "Beer"]
+        self.stock = input_stock 
+        
 
     def add_money(self, price):
         self.till += price
@@ -16,3 +17,5 @@ class Pub:
         if input_alcohol_level >= 10:
             print("You're cut off m8")
             #break
+
+    #def stock_check(self): dictionary with multiple key value pairs
